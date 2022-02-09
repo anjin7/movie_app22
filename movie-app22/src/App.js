@@ -1,9 +1,11 @@
-import './App.css';
+import Button from './Button';
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <h2>Hello</h2>
+    <div>
+      <h2 className={styles.title}>Hello</h2>
+      <Button text={"continue"} />
     </div>
   );
 }

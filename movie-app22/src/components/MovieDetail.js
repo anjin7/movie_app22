@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 
-function MovieDetail({ coverImg, title_long, rating, summary, genres }){
+function MovieDetail({ coverImg, title_long, rating, summary, genres, runtime }){
   return (
     <div>
       <img src={coverImg} alt={title_long} />
       <h2>{title_long}</h2>
-      <p>{rating}</p>
+      <h3>{rating}</h3>
+      <h4>{runtime}</h4>
       <p>{summary}</p>
       <ul>
         {genres === null ?  "" : genres.map(g => (

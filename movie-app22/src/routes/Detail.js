@@ -23,17 +23,16 @@ function Detail() {
       <h2>Loading Details...</h2>
       ) : (
       <div>
-        {movieDetail.map(md => (
-          <MovieDetail
-          key={md.id}
-          id={md.id}
-          coverImg={md.large_cover_image}
-          title_long={md.title_long} 
-          rating={md.rating} 
-          summary={md.summary} 
-          genres={md.genres} 
+        <MovieDetail
+          key={movieDetail.id}
+          id={movieDetail.id}
+          coverImg={movieDetail.large_cover_image}
+          title_long={movieDetail.title_long} 
+          rating={movieDetail.rating} 
+          summary={movieDetail.description_full} 
+          genres={movieDetail.genres}
+          runtime={movieDetail.runtime}
         />
-        ))}
       </div>
       )}
     </div>

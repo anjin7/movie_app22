@@ -1,0 +1,17 @@
+.movie_detail{
+  display: flex;
+}
+
+
+.md__img{
+  max-height: 750px;
+  max-width: 500px;
+  height: auto;
+  width: auto;
+}
+
+.md__container{
+  margin: 0;
+  padding: 20px;
+  background-color: #fff;
+}

@@ -1,47 +1,59 @@
 .movie_detail{
   margin: 40px auto;
-  display: flex;
   max-width: 1250px;
   max-height: 750px;
+  display: flex;
 }
 
-
-.md__img{
+.movie_detail .md__img{
   max-height: 750px;
   max-width: 500px;
   height: auto;
   width: auto;
 }
 
-.md__container{
+.movie_detail .md__container{
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 20px;
   background-color: #fff;
 }
-.md__title{
+.movie_detail .md__title{
   font-size: 32px;
+  font-weight: 900;
+  margin-top: 12px;
 }
-.md__rating,
-.md__runtime{
+.movie_detail .md__rating,
+.movie_detail .md__runtime{
   text-align: right;
   padding-right: 20px;
+  font-size: 16px;
+  margin: 8px 0;
 }
-.md__genres{
+.movie_detail .md__genres{
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  font-weight: 700;
 }
-.md__genres li{
+.movie_detail .md__genres li{
   margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.movie_detail .md__summary{
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 @media screen and (max-width: 1090px) {
   .movie_detail{
     max-width: 800px;
   }
-  .md__img{
+  .movie_detail .md__img{
     min-width: 200px;
     height: 100%;
   }

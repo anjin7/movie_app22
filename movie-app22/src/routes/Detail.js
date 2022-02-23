@@ -17,7 +17,6 @@ function Detail() {
     useEffect(() => {
       getMovie();
     }, [getMovie]);
-    console.log(movieDetail)
   return (
     <div className={styles.container}>
       {loading ? (

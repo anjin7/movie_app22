@@ -14,7 +14,7 @@ function MovieDetail({ coverImg, title_long, rating, summary, genres, runtime })
             <li key={g}>{g}</li>
           ))}
         </ul>
-        <p>{summary}</p>
+        <p className={styles.md__summary}>{summary}</p>
         
       </div>
       

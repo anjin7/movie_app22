@@ -1,5 +1,8 @@
 .movie_detail{
+  margin: 40px auto;
   display: flex;
+  max-width: 1250px;
+  max-height: 750px;
 }
 
 
@@ -14,4 +17,32 @@
   margin: 0;
   padding: 20px;
   background-color: #fff;
+}
+.md__title{
+  font-size: 32px;
+}
+.md__rating,
+.md__runtime{
+  text-align: right;
+  padding-right: 20px;
+}
+.md__genres{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.md__genres li{
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 1090px) {
+  .movie_detail{
+    max-width: 800px;
+  }
+  .md__img{
+    min-width: 200px;
+    height: 100%;
+  }
 }

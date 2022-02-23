@@ -6,10 +6,10 @@ function MovieDetail({ coverImg, title_long, rating, summary, genres, runtime })
     <div className={styles.movie_detail}>
       <img src={coverImg} alt={title_long} className={styles.md__img} />
       <div className={styles.md__container}>
-        <h2>{title_long}</h2>
-        <h3>{rating}</h3>
-        <h4>{Math.floor(runtime/60)}h {runtime%60}m ({runtime}m)</h4>
-        <ul>
+        <h2 className={styles.md__title}>{title_long}</h2>
+        <h3 className={styles.md__rating}>⭐ {rating}</h3>
+        <h4 className={styles.md__runtime}>{Math.floor(runtime/60)}h {runtime%60}m ({runtime}m)</h4>
+        <ul className={styles.md__genres}>
           {genres === null ?  "" : genres.map(g => (
             <li key={g}>{g}</li>
           ))}
